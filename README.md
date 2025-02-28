@@ -25,6 +25,7 @@
     "database": "flight_search_DB_DEV",
     "host": "127.0.0.1",
     "dialect": "mysql"
+<<<<<<< HEAD
   }
   -once you've added your db config as listed above, go to the src folder from your terminal and execute 'npx sequelize db:create'
 
@@ -37,3 +38,6 @@
    -A flight belong to an airplane but one airplane can be used in multiple flights
    -A city has many airports but one airport belong to a city
    -One airport can have many flights,but a flight belong to one airport
+=======
+  }
+>>>>>>> f97a096970cf8ba6e824fd208fc7287f915fdfa5
