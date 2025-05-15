@@ -1,15 +1,15 @@
 const express=require('express');
-const bodyparser=require('body-parser');
+const bodyParser=require('body-parser');
 
 const {PORT}=require('./config/serverconfig');
 const ApiRoutes = require('./routes/index');
 const Cityrepository=require('./repository/city-repository');
 
-const setupandstartserver=async()=>{
+const setupandstartserver = async()=>{
     //crete the express object
     const app=express();
-    app.use(bodyparser.json());
-    app.use(bodyparser.urlencoded({extended:true}))
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({extended:true}));
 
     app.use('/api', ApiRoutes);
     app.listen(PORT,async()=>{
